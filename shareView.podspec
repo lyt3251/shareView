@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "shareView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "测试用."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lyt3251/shareView.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/lyt3251/shareView.git", :tag => "0.0.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -103,13 +103,13 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+  s.resource  = "shareDemo/shareDemo/*.bundle"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 	#s.resources = "shareDemo/shareDemo/resources.bundle/*.png" 
 	s.resource_bundles = {
- 	 'MyLibrary' => ['resources.bundle/*.png'],
+ 	 'shareView' => ['resources.bundle/*.png'],
 	}
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
