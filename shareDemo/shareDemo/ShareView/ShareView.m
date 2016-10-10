@@ -45,10 +45,10 @@
     _imageView = [[UIImageView alloc] init];
     _imageView.contentMode = UIViewContentModeCenter;
     [self addSubview:_imageView];
-//    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"resources.bundle"];
-//    [_imageView setImage:[UIImage imageNamed:@"icon_search@2x.png" inBundle:bundle compatibleWithTraitCollection:nil ]];
-    NSString *imageName = @"resources.bundle/icon_search";
-    [_imageView setImage:[UIImage imageNamed:imageName]];
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    [_imageView setImage:[UIImage imageNamed:@"top" inBundle:bundle compatibleWithTraitCollection:nil ]];
+//    NSString *imageName = @"resources.bundle/icon_search";
+//    [_imageView setImage:[UIImage imageNamed:imageName]];
     
     
 }
