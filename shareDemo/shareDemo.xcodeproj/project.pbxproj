@@ -16,6 +16,9 @@
 		0D465FD91DAB3C0100FD74DE /* shareDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D465FD81DAB3C0100FD74DE /* shareDemoTests.m */; };
 		0D465FE41DAB3C0100FD74DE /* shareDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D465FE31DAB3C0100FD74DE /* shareDemoUITests.m */; };
 		0D465FF41DAB3C3300FD74DE /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D465FF31DAB3C3300FD74DE /* ShareView.m */; };
+		0DF130591DAB6EF900F3851B /* icon_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DF130571DAB6EF900F3851B /* icon_search@2x.png */; };
+		0DF1305A1DAB6EF900F3851B /* icon_search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DF130581DAB6EF900F3851B /* icon_search@3x.png */; };
+		0DF1305C1DAB6F6A00F3851B /* resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1305B1DAB6F6A00F3851B /* resources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		0D465FE51DAB3C0100FD74DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D465FF21DAB3C3300FD74DE /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
 		0D465FF31DAB3C3300FD74DE /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
+		0DF130571DAB6EF900F3851B /* icon_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_search@2x.png"; sourceTree = "<group>"; };
+		0DF130581DAB6EF900F3851B /* icon_search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_search@3x.png"; sourceTree = "<group>"; };
+		0DF1305B1DAB6F6A00F3851B /* resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		0D465FBD1DAB3C0100FD74DE /* shareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0DF130561DAB6EF900F3851B /* Resources */,
 				0D465FF11DAB3C1600FD74DE /* ShareView */,
 				0D465FC11DAB3C0100FD74DE /* AppDelegate.h */,
 				0D465FC21DAB3C0100FD74DE /* AppDelegate.m */,
@@ -114,6 +121,7 @@
 				0D465FCC1DAB3C0100FD74DE /* LaunchScreen.storyboard */,
 				0D465FCF1DAB3C0100FD74DE /* Info.plist */,
 				0D465FBE1DAB3C0100FD74DE /* Supporting Files */,
+				0DF1305B1DAB6F6A00F3851B /* resources.bundle */,
 			);
 			path = shareDemo;
 			sourceTree = "<group>";
@@ -151,6 +159,15 @@
 				0D465FF31DAB3C3300FD74DE /* ShareView.m */,
 			);
 			path = ShareView;
+			sourceTree = "<group>";
+		};
+		0DF130561DAB6EF900F3851B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DF130571DAB6EF900F3851B /* icon_search@2x.png */,
+				0DF130581DAB6EF900F3851B /* icon_search@3x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D465FCE1DAB3C0100FD74DE /* LaunchScreen.storyboard in Resources */,
+				0DF130591DAB6EF900F3851B /* icon_search@2x.png in Resources */,
 				0D465FCB1DAB3C0100FD74DE /* Assets.xcassets in Resources */,
+				0DF1305C1DAB6F6A00F3851B /* resources.bundle in Resources */,
 				0D465FC91DAB3C0100FD74DE /* Main.storyboard in Resources */,
+				0DF1305A1DAB6EF900F3851B /* icon_search@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +541,7 @@
 				0D465FEA1DAB3C0100FD74DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D465FEB1DAB3C0100FD74DE /* Build configuration list for PBXNativeTarget "shareDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +550,7 @@
 				0D465FED1DAB3C0100FD74DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D465FEE1DAB3C0100FD74DE /* Build configuration list for PBXNativeTarget "shareDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +559,7 @@
 				0D465FF01DAB3C0100FD74DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

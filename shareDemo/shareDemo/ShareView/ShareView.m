@@ -10,6 +10,7 @@
 
 @interface ShareView()
 @property(nonatomic, strong)UILabel *label;
+@property(nonatomic, strong)UIImageView *imageView;
 @end
 
 @implementation ShareView
@@ -36,16 +37,27 @@
 -(void)setupViews
 {
     _label = [[UILabel alloc] init];
+    _label.textAlignment = NSTextAlignmentCenter;
     _label.frame = self.bounds;
     [self addSubview:_label];
     _label.text = @"测试";
+    
+    _imageView = [[UIImageView alloc] init];
+    _imageView.contentMode = UIViewContentModeCenter;
+    [self addSubview:_imageView];
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    [_imageView setImage:[UIImage imageNamed:@"icon_search@2x.png" inBundle:bundle compatibleWithTraitCollection:nil ]];
+    
 }
 
 
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    _label.frame = self.bounds;
+    CGRect rect = self.bounds;
+    
+    _label.frame = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height/2);
+    _imageView.frame = CGRectMake(rect.origin.x, rect.origin.y + rect.size.height/2, rect.size.width, rect.size.height/2);
     
     
 }
